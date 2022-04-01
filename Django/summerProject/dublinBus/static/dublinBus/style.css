@@ -1,0 +1,98 @@
+/* Set the size of the div element that contains the map */
+/*Css for map adapted from google maps tutorial  https://developers.google.com/maps/documentation/javascript/examples/directions-panel#maps_directions_panel-html*/
+#map {
+    height: 100%;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #29434E;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.sidebar a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover, .sidebar a:focus {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar a {font-size: 20px}
+  .sidebar .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.sidebar2 {
+position: fixed;
+top: 51px;
+bottom: 0;
+left: 0;
+z-index: 1000;
+display: block;
+padding: 20px;
+overflow-x: hidden;
+overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+background-color: #f5f5f5;
+border-right: 1px solid #eee;
+}
+.list-group_2{
+    max-height: 500px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.scroll_bar_chrome::-webkit-scrollbar {
+  display: none; /* Chrome - removes scrollbar timetable */
+}
+.scroll_bar_fire {
+  -ms-overflow-style: none;  /* IE and Edge - removes scrollbar timetable */
+  scrollbar-width: none;  /* Firefox - removes scrollbar timetable */
+}
+
+.orange-table {
+  color: rgb(255,193,7);
+  /*border: 5px outset rgb(255,193,7);*/
+  /*margin: 40px;*/
+  /*border-radius: 25px*/
+}
+
+#teamBacking {
+    margin-top: 20px;
+    /* background-color: orange; */
+}
+
+.user-pages {
+  color: white;
+}
+.user-pages li {
+  color: white;
+}

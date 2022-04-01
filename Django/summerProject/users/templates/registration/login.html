@@ -1,0 +1,21 @@
+{% extends "dublinBus/base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class=" text-center">
+    <form method="post" class="form-control">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <div class="text-center m-2">
+        <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+        <div class="text-center">
+        <p>Forgot your password? <a href="/password_reset">Reset it here</a></p>
+        <p>Don't have an account? <a href="/register">Create one</a></p>
+        </div>
+    </form>
+    </div>
+{% endblock %}
